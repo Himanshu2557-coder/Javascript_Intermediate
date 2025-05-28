@@ -24,6 +24,29 @@ public class If_Else {
         } else {
             System.out.println("The number is outside the range of 1 to 100.");
         }
+
+        // Nested if-else example
+        if (number > 0) {
+            if (number % 2 == 0) {
+                System.out.println("The number is a positive even number.");
+            } else {
+                System.out.println("The number is a positive odd number.");
+            }
+        } else if (number < 0) {
+            if (number % 2 == 0) {
+                System.out.println("The number is a negative even number.");
+            } else {
+                System.out.println("The number is a negative odd number.");
+            }
+        } else {
+            System.out.println("The number is zero, which is neither positive nor negative.");
+        }
+        // Ternary operator example
+        String result = (number > 0) ? "The number is positive." : 
+                        (number < 0) ? "The number is negative." : 
+                        "The number is zero.";
+        System.out.println(result);
+        
     }
     
 }
